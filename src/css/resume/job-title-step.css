@@ -1,0 +1,142 @@
+.create-resume-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background-color: white;
+}
+
+.create-resume-content {
+  max-width: 800px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Typography */
+.app-name {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 1rem;
+  font-weight: 500;
+}
+
+.main-heading {
+  font-size: 2.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.subtitle {
+  font-size: 1rem;
+  color: #64748b;
+  margin-bottom: 3rem;
+  line-height: 1.5;
+}
+
+/* Form Section */
+.form-section {
+  text-align: left;
+  margin-top: 2rem;
+}
+
+.section-heading {
+  font-size: 1.5rem;
+  color: #1e293b;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.section-description {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 2rem;
+  line-height: 1.5;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #1e293b;
+  background: white;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #007cb5;
+  box-shadow: 0 0 0 2px rgba(0, 124, 181, 0.1);
+}
+
+/* Navigation buttons */
+.form-section .navigation-buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.continue-button {
+  padding: 0.75rem 2rem;
+  background: #007cb5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  min-width: 100px;
+}
+
+.continue-button:hover {
+  background: #006494;
+}
+
+@media (max-width: 768px) {
+  .create-resume-container {
+    padding: 1.5rem;
+  }
+
+  .main-heading {
+    font-size: 2rem;
+  }
+
+  .navigation-buttons {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .continue-button {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .create-resume-container {
+    padding: 1rem;
+  }
+
+  .main-heading {
+    font-size: 1.75rem;
+  }
+}
+

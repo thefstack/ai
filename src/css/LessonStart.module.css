@@ -1,0 +1,337 @@
+/* CategorySelection.module.css */
+
+.container {
+  display: flex;
+  flex-direction: row;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+  transition: all 0.3s ease-in-out;
+}
+.titleplan{
+  font-size: 18px;
+  font-family:"Montserrat", sans-serif;
+  font-weight: 600;
+}
+.lessonLebel{
+  font-size: 14px;
+  font-family:"Montserrat", sans-serif;
+}
+.labelValue{
+  font-size: 13px;
+  font-weight: normal;
+  font-family:"Montserrat", sans-serif;
+  color:rgb(88, 87, 87);
+
+}
+
+
+.lessonPlanInfo{
+  display:flex;
+  justify-content: space-between;
+  margin: 20px 0px;
+
+}
+
+.leftSide, .rightSide{
+  display:flex;
+  flex-direction: column;
+  gap:10px
+}
+.Selected{
+  font-size: 0.8rem;
+}
+
+.btnGrp{
+  display: flex;
+  flex-direction: column;
+  gap:10px;
+  width: 100%;
+  max-width: 150px;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.scheduleContainer{
+  display:flex;
+  flex-direction:column;
+  gap:5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.LessonViewButton {
+  background-color: #007cb6;
+  color: white;
+  border: none;
+  padding:8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family:"Montserrat", sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+}
+.LessonCompleteButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding:8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family:"Montserrat", sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+.LessonCompletedButton {
+  background-color: rgb(59, 170, 59);
+  color: white;
+  border: none;
+  padding:5px 8px;
+  border-radius: 80px;
+  cursor: pointer;
+  font-size: 0.6rem;
+  font-family:"Montserrat", sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startQuizBtn{
+  margin: 3px 0;
+  border:none;
+  outline:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  padding:10px 30px;
+  background-color: #ffecc7c7;
+  color: #E4B141;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.startQuizBtn:hover{
+  background-color: #fae3b4f5;
+  color:#eaa000;
+}
+
+.headertext{
+  font-size: 15px;
+  font-family:"Montserrat", sans-serif;
+  margin-top: 10px;
+}
+.dynamicDataGenerate{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  gap:2px;
+  /* background-color: aqua; */
+}
+
+.dynamicSchedule{
+  display:flex;
+  gap:10px;
+  padding:10px;
+  background: #cfe3f8;
+  border-radius: 10px;
+  align-items: center;
+  margin: 10px;
+  justify-content: center;
+  width: 100%;
+}
+.topic{
+  font-size: 13px;
+  font-family:"Montserrat", sans-serif;
+}
+.topicText{
+  font-size: 13px;
+  font-family:"Montserrat", sans-serif;
+  color:rgb(88, 87, 87);
+  display:flex;
+  gap:10px;
+  align-items: center;
+}
+.scheduleText{
+  margin-top:30px;
+  font-size: 14px;
+  padding: 0 10px;
+  font-weight: 600;
+  font-family:"Montserrat", sans-serif;
+}
+.dayText{
+  font-size: 13px;
+  padding: 0 10px;
+  font-family:"Montserrat", sans-serif;
+  font-weight: 700;
+  width: 100%;
+  margin:8px 0px 3px 0px;
+}
+.toggleButton {
+  display: none;
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 28px;
+}
+
+@media (max-width: 734px) {
+  .toggleButton {
+    display: block;
+  }
+  
+  .dynamicSchedule{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .btnGrp{
+    flex-direction: column;
+    width: 100%;
+    max-width: none;
+  }
+}
+
+
+.showChat{
+  display:flex;
+}
+@media(max-width:1100px){
+  .chatsectiondiv{
+    display:none
+  }
+  .showChat{
+    display:none;
+  }
+}
+
+
+.sidebardiv {
+  @media (max-width: 768px) {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    position: absolute;
+    transform: translateX(-200%);
+  }
+}
+
+.contentdiv {
+  width: 15%;
+  background-color: rgb(255, 255, 255);
+  padding: 20px;
+}
+
+.contentdivMobile {
+  display: none; /* Hide by default */
+}
+@media (max-width: 734px) {
+  .contentdiv {
+    display: none; /* Hide on mobile */
+  }
+
+  .contentdivMobile {
+    display: block; /* Show on mobile */
+    width: 100%;
+    padding: 20px;
+  }
+}
+.chatcontainerdiv {
+  width: -moz-available;
+  width: -webkit-fill-available;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  display: flex;
+  width:100%;
+}
+/*  */
+.lessondiv{
+  width:100%;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  overflow-y: auto;
+  padding:15px;
+  /* margin-bottom: 30px; */
+
+}
+.chatsectiondiv{
+  min-width:40%;
+  width:40%;
+  background-color: rgb(255, 255, 255);
+  height: 100vh;
+  padding:5px;
+}
+
+
+.title {
+  color: black;
+  font-family:"Montserrat", sans-serif;;
+  margin-top: -15px;
+  margin-bottom: 10px;
+  font-size: 30px;
+  margin-left: 60px;
+}
+
+.newChatButton {
+  background-color: #00496B;
+  color: white;
+  height: 32px;
+  width: 203px;
+  border: none;
+  border-radius: 5px;
+  text-align: left;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  font-family: "Montserrat", sans-serif;;
+  font-size: 15px;
+  margin-left: 60px;
+}
+
+.newChatButton:hover {
+  background-color: #003D5B;
+}
+
+.newChatButton img {
+  margin-right: 10px;
+}
+
+
+@media (max-width: 734px) {
+  .contentdiv {
+    display: none;
+  }
+
+  .chatdiv {
+    padding: 20px;
+  }
+
+  .title,
+  .newChatButton {
+    margin-left: 10px;
+    margin-bottom: 35px;
+    margin-top: -26px;
+  }
+
+  .show {
+    opacity: 1 !important;
+    visibility: visible !important;
+    pointer-events: all !important;
+    transform: translateX(0) !important;
+  }
+  .lessondiv{
+    padding-top:70px;
+  }
+}

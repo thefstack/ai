@@ -1,0 +1,316 @@
+/* Updated CSS */
+
+/* Chat Container */
+.chatContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 100vh;
+    /* Take the full viewport height */
+    padding: 10px 20px;
+    width: 100%;
+    background-color: #ffffff;
+    margin: 0 auto;
+    box-shadow: 0 4px 8px rgba(94, 93, 93, 0.1);
+  }
+  .chatContainer ol {
+    white-space: normal; /* Wrap preformatted text */
+  
+  }
+  
+  /* Loading Animation */
+  @keyframes ellipsis {
+    0% {
+      content: '';
+    }
+  
+    33% {
+      content: '.';
+    }
+  
+    66% {
+      content: '..';
+    }
+  
+    100% {
+      content: '...';
+    }
+  }
+  
+  .loading {
+    display: inline-block;
+    min-height: 10px;
+    font-size: 2em;
+    color: gray;
+  
+    &:after {
+      content: '';
+      animation: ellipsis steps(4, end) 1s infinite;
+    }
+  }
+  .inputMic{
+    outline: none;
+    border: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 768px) {
+    .chatContainer {
+      width: 100%;
+      margin: 0 10px;
+      height: calc(100vh - 70px);
+    }
+  }
+  
+  /* Messages Container */
+  .messages {
+    flex-grow: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px 0;
+    /* Adjust padding to ensure proper alignment */
+    font-family: 'Montserrat', sans-serif;
+  
+  }
+  
+  /* Individual Message */
+  .message {
+    max-width: 100%;
+    border-radius: 10px;
+    position: relative;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+  
+  
+  
+  }
+  
+  /* Message Content */
+  .messageContent {
+    position: relative;
+    font-size: 14px;
+    word-wrap: break-word;
+    font-family: 'Montserrat', sans-serif;
+    /* Change the font family if desired */
+    line-height: 1.6rem;
+    color: black;
+    font-weight: 500;
+    min-height: 20px;
+  }
+  
+  /* User Message */
+  .user {
+    align-self: flex-start;
+  }
+  
+  
+
+  
+  .user .userMessage{
+    background-color: #fff;
+  }
+  
+  .assistantMessageai {
+    color: #0070f3;
+    background-color: #4caf50;
+    display: flex;
+    margin-top: 10px;
+    background-color: #fff;
+    /* Change background color for prominence */
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    min-height: 15px;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+    gap:5px;
+  }
+  
+  /* .assistantMessage img{
+    margin-left: -2px;
+    margin-top: 4px;
+  } */
+  
+ 
+  .userLogotyping {
+    margin-left: -2px;
+  }
+  
+  /* Assistant Message */
+  .assistant {
+    align-self: flex-start;
+    border: none;
+    display: flex;
+    align-items: flex-start;
+  }
+  
+  
+  
+  
+  .assistant .userMessage{
+    gap:0;
+  }
+  
+  .assistant .userMessage img{
+    margin-left: -10px;
+  }
+  
+  /* Assistant Message Content */
+  .assistantMessage {
+    display: flex;
+    margin-top: 10px;
+    background-color: #fff;
+    /* Change background color for prominence */
+    font-size: 11px;
+    font-family: 'Montserrat', sans-serif;
+    justify-content: center;
+    gap: 5px;
+    min-height: 15px;
+  }
+  
+  
+  
+  /* User Message */
+  .userMessage {
+    display: flex;
+    align-items: center;
+    margin-top:10px;
+    background-color: #f0f0f0;
+    padding:0 10px;
+    border-radius: 5px;
+  }
+  
+  /* User Logo */
+  .userLogo {
+    flex-shrink: 0;
+    margin-right: 10px;
+    justify-content: flex-start;
+    margin-left: -8px;
+  }
+  
+  /* Input Container */
+  /* Input Container */
+.inputContainer {
+  display: flex;
+  align-items: center;
+  padding: 10px 20px 10px 10px;
+  border-top: 1px solid #ddd;
+  background-color: #fafafa;
+  gap:10px
+}
+ 
+/* Input Field */
+.input {
+  flex-grow: 1;
+  min-height: 35px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  resize: none;
+  overflow-y: auto;
+  box-sizing: "border-box"
+}
+/* Hide scrollbar */
+.input::-webkit-scrollbar {
+  display: none; /* For Chrome, Safari, and Edge */
+}
+
+
+  .input:focus {
+    outline: none;
+    border-color: #00496B;
+  }
+  
+  /* Send Button */
+  .sendButton {
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+
+  
+  .suggestions .userMessage .messageContent{
+    margin-left: 15px;
+  }
+  
+  
+  .disabled {
+    pointer-events: none;
+    /* Disable interaction */
+    cursor: not-allowed;
+    /* Change cursor to 'not-allowed' for other non-selected buttons */
+  }
+  
+  
+  /* Loading Dots Animation */
+  @keyframes loading-dot {
+    0% {
+      opacity: 1;
+    }
+  
+    100% {
+      opacity: 0;
+    }
+  }
+  
+  .loadingDotsContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Button Input */
+  .buttonInput:hover {
+    cursor: pointer;
+  }
+  
+  /* Typing Effect */
+  .typingEffect {
+    text-align: left;
+    color: #1F8CEB;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Follow-Up Section */
+  .followUp {
+    margin-top: 20px;
+  }
+  
+  /* Follow-Up Question Container */
+  .followUpQuestion {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+  
+  /* Follow-Up Text */
+  .followUpText {
+    cursor: pointer;
+    color: #0070f3;
+    font-weight: 600;
+    margin-right: 10px;
+    text-decoration: none;
+    /* Ensure no underline */
+  }
+  
+  
+.subjectTitle {
+    font-family: 'Montserrat', sans-serif;
+    ;
+    margin-top: 17px;
+    color: rgb(0, 0, 0);
+  }

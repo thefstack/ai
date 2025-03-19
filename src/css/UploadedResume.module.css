@@ -1,0 +1,207 @@
+.resumePageContainer {
+    max-width: 1000px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.pageTitle {
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.resumeHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+    /* padding: 10px; */
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.resumeHeaderLeft {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: left;
+    
+}
+
+.resumeHeaderRight {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    background: #f9f9f9;
+    border-radius: 6px;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    width: 220px;
+    position: relative;
+}
+
+.searchContainer input {
+    border: none;
+    background: transparent;
+    outline: none;
+    flex: 1;
+    font-size: 14px;
+    padding-left: 25px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+}
+
+.uploadButton {
+    background-color: #f3f4f6;
+    color: #333;
+    border: 1px solid #ddd;
+    padding: 8px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 500;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.resumeList {
+    max-height: 350px;
+    overflow-y: auto;
+    /* border: 1px solid #ddd; */
+    border-radius: 6px;
+    padding: 5px;
+    background: #fff;
+    margin-top: 20px;
+}
+
+.resumeItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px;
+    border-radius: 6px;
+    background: #fff;
+    margin-bottom: 5px;
+    transition: background 0.3s;
+    cursor: pointer;
+    border: 1px solid #e5e7eb;
+}
+
+.resumeItem:hover {
+    background-color: #f8f9fa;
+}
+
+.selected {
+    background-color: #e7f0ff;
+    border: 1px solid #3b82f6;
+}
+
+.resumeContent {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 14px;
+}
+
+.fileIcon {
+    color: #3b82f6;
+}
+
+.resumeName {
+    font-size: 14px;
+    font-weight: 500;
+    color: #333;
+}
+
+.selectionIcon {
+    color: #3b82f6;
+}
+
+.footerButtons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+
+
+.continueButton {
+    padding: 10px 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;;
+}
+
+.prevButton {
+    border: none;
+    background: none;
+    color:black;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    margin-left:5px ;
+
+
+    /* background: #f3f4f6; */
+    /* color: #333; */
+    /* border: 1px solid #ddd; */
+}
+
+.continueButton {
+    background: #3b82f6;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .resumeHeader {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .resumeHeaderRight {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .searchContainer {
+        width: 100%;
+    }
+
+    .uploadButton {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .footerButtons {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .prevButton,
+    .continueButton {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}

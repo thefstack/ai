@@ -1,0 +1,275 @@
+/* Container styles */
+.work-experience-container {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid black;
+}
+
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.title-wrapper h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1e293b;
+  margin: 0;
+}
+
+/* Experience item styles */
+.experience-item {
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+  background: white;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background: #f8fafc;
+  border-radius: 8px 8px 0 0;
+}
+
+.experience-header span {
+  font-size: 0.875rem;
+  color: #64748b;
+  font-weight: 500;
+}
+
+.experience-actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+/* Form styles */
+.experience-form {
+  padding: 1rem;
+  border-top: 1px solid #e2e8f0;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+.form-group-project {
+  margin-bottom: 1rem;
+  border: 1px solid #e88080;
+  overflow: hidden;
+}
+
+.form-group-project label {
+  display: block;
+  font-size: 0.875rem;
+  font-weight: 500;
+  color: #1e293b;
+  margin-bottom: 0.5rem;
+}
+
+/* Editor toolbar */
+.editor-toolbar {
+  display: flex;
+  gap: 0.5rem;
+  border-bottom: 1px solid;
+  padding: 0.3rem 0.5rem;
+  justify-content: flex-end;
+}
+
+.ai-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  background: #007cb5;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  font-size: 0.875rem;
+  transition: background-color 0.2s ease;
+}
+
+.ai-button:hover {
+  background: #016796;
+}
+
+/* Input styles */
+.input-with-icon {
+  position: relative;
+}
+
+.input-with-icon svg {
+  display: none;
+  /* Hide all SVG icons in inputs */
+}
+
+.input-with-icon input {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  /* Remove left padding that was for icon */
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  color: #1e293b;
+  background: white;
+}
+
+.input-with-icon input:focus {
+  outline: none;
+  border-color: #0066ff;
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.1);
+}
+
+/* Textarea styles */
+.textarea-with-icon {
+  position: relative;
+}
+
+.textarea-icon {
+  display: none;
+  /* Hide the textarea icon */
+}
+
+.experience-form textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 0;
+  font-size: 0.875rem;
+  color: #1e293b;
+  resize: vertical;
+  min-height: 100px;
+  background: white;
+  border: none;
+}
+
+.experience-form textarea:focus {
+  outline: none;
+  border-radius: none;
+  box-shadow: 0 0 0 2px rgba(0, 102, 255, 0.1);
+}
+
+/* Button styles */
+.action-button {
+  background: none;
+  border: none;
+  padding: 0.25rem;
+  color: #64748b;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.action-button:hover {
+  color: #0066ff;
+}
+
+.add-experience-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: fit-content;
+  padding: 0.75rem 1rem;
+  background: #007cb5;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.add-experience-button:hover {
+  background: #016796;
+}
+
+.add-education-btn-cont {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.view-guidance-button-work {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  border-radius: 6px;
+  background: none;
+  color: black;
+  font-size: 0.875rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.view-guidance-button-work:hover {
+  background: #eff6ff;
+}
+
+/* Checkbox styles */
+.checkbox-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+  color: #1e293b;
+  cursor: pointer;
+}
+
+.checkbox-label input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 640px) {
+  .section-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .view-guidance-button {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+}
+

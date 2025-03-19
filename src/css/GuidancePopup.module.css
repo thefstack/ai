@@ -1,0 +1,269 @@
+/* ================= OVERLAY & MODAL CONTAINER ================= */
+.popupOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4); /* Dark transparent overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+/* Popup Box */
+.popupBox {
+    background: white;
+    padding: 24px;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 650px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* ================= HEADER ================= */
+.popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 12px;
+    font-weight: 600;
+    font-size: 16px;
+    color: #222;
+}
+
+/* Close Button */
+.closeBtn {
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    color: #777;
+    transition: color 0.3s ease-in-out;
+}
+
+.closeBtn:hover {
+    color: #333;
+}
+
+/* ================= TAB BUTTONS (Overview & Analysis) ================= */
+.buttonGroup {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+
+/* Tab Button (Default) */
+.tabBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    background: white;
+    border: 1.5px solid #000;
+    border-radius: 8px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Active Tab */
+.tabBtn.active {
+    background: #e7f1ff;
+    color: #62acd0;
+    border: 1.5px solid #62acd0;
+}
+
+/* Hover Effect */
+.tabBtn:hover {
+    background: rgba(0, 123, 255, 0.1);
+    border-color: #62acd0;
+    color: #62acd0;
+}
+
+/* ================= CONTENT STYLES ================= */
+.popupBody {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.6;
+    padding: 8px 10px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.popupBody h3 {
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 12px;
+}
+
+/* Guidance List */
+.guidanceList {
+    font-size: 13px;
+    line-height: 1.5;
+    padding-left: 20px;
+}
+
+.guidanceList li {
+    margin-bottom: 8px;
+}
+
+/* ================= ANALYSIS SECTION ================= */
+.analysisSection {
+    font-size: 14px;
+}
+
+.analysisItem {
+    display: flex;
+flex-direction: column;
+    /* align-items: center; */
+    gap: 10px;
+    padding: 10px 0;
+    font-size: 14px;
+}
+
+.analysisItem strong {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.analysisItem p {
+    margin: 4px 0;
+    font-size: 13px;
+    color: #555;
+}
+
+/* ✅ Green Check Icon */
+.checkIcon {
+    font-size: 16px;
+    color: #22c55e; /* Green */
+}
+
+/* Separator Line */
+.analysisSeparator {
+    border-bottom: 1px solid #ddd;
+    margin: 10px 0;
+    width: 100%;
+}
+
+/* ================= FOOTER BUTTONS ================= */
+.popupFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 18px;
+}
+.pinfo{
+    font-size: 15px;
+    margin-left: 10px;
+}
+/* Navigation Buttons */
+.navBtn {
+    padding: 8px 12px;
+    background: none;
+    border: none;
+    color: #777777;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, border 0.3s;
+}
+
+.navBtn:hover {
+    background: #f7f7f7;
+    border-color: #999;
+}
+
+
+.skillPopup {
+    background: rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 20px;
+    max-width: 600px;
+    width: 100%;
+  }
+  
+  .popupHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .closeIcon {
+    cursor: pointer;
+  }
+  
+  .requiredText {
+    font-size: 12px;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .label {
+    /* font-weight: bold; */
+    display: block;
+    margin-bottom: 5px;
+    font-size: 13px;
+  }
+  
+  .popupInput {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 12px;
+    margin-bottom: 15px;
+  }
+  
+  .suggestionsBox {
+    background: #f1f6fc;
+    padding: 15px;
+    border-radius: 10px;
+  }
+  
+  .suggestionsBox p {
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+  
+  .suggestionsList {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  .skillButton {
+    padding: 8px 12px;
+    border: 1px solid #ccc;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    white-space: nowrap; /* Prevents width increase */
+  }
+  
+  .skillButton:hover {
+    background: #dceeff;
+    border-color: #a3c9ff;
+  }
+  
+  .selectedSkill {
+    background: #2a72de !important; /* Keep background blue */
+    color: white !important;
+    border: 1px solid #2a72de !important;
+    border-radius: 20px;
+    padding: 8px 12px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  

@@ -1,0 +1,114 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 999;
+  }
+  
+  .modalContainer {
+    background-color: #fff;
+    width: 800px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+  }
+  
+  .closeButton {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .modalTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .optionsContainer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+  }
+  
+  .optionCard {
+    width: 400px;
+    padding: 15px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    text-align: center;
+    /* transition: transform 0.2s, box-shadow 0.2s; */
+    cursor: pointer;
+    height:180px;
+  }
+  
+  .optionCard:hover {
+    /* transform: translateY(-5px); */
+    box-shadow: 0 4px 10px rgba(54, 83, 121, 0.1);
+    border: 1px solid #3194fd;
+  }
+  
+  .icon {
+    color: #007bff;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 10px;
+  }
+  
+  .optionCard h3 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin: 10px 0 5px;
+  }
+  
+  .optionCard p {
+    font-size: 0.9rem;
+    color: #666;
+  }
+  
+  @media (max-width: 768px) {
+    .modalContainer {
+      width: 95%; /* Adjust width for smaller screens */
+      padding: 15px; /* Reduce padding */
+    }
+  
+    .modalTitle {
+      font-size: 1.2rem; /* Scale down title font size */
+    }
+  
+    .optionsContainer {
+      flex-direction: column; /* Stack options vertically */
+      gap: 10px; /* Reduce gap between options */
+    }
+  
+    .optionCard {
+      width: 100%; /* Full width on smaller screens */
+      max-width: 100%;
+      padding: 10px; /* Reduce padding for options */
+      font-size: 0.85rem; /* Adjust font size */
+      height: auto; /* Allow height to adjust based on content */
+    }
+  
+    .optionCard h3 {
+      font-size: 1rem; /* Scale down heading size */
+    }
+  
+    .optionCard p {
+      font-size: 0.8rem; /* Adjust paragraph size */
+    }
+  }
+  

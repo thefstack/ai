@@ -1,0 +1,12 @@
+.loadingSpinner {
+  animation: spin 1s linear infinite; /* Spins the loader */
+  display: inline-block;
+  vertical-align: middle;
+  color: fff; /* Customize color as needed */
+}
+
+/* Keyframes for spinning animation */
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}

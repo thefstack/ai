@@ -1,0 +1,125 @@
+/* CategorySelection.module.css */
+
+.container {
+    display: flex;
+    flex-direction: row;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    position: relative;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .toggleButton {
+    display: none;
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 28px;
+  }
+  
+  @media (max-width: 768px) {
+    .toggleButton {
+      display: block;
+    }
+  }
+  
+  .sidebardiv {
+    @media (max-width: 768px) {
+      opacity: 0;
+      visibility: hidden;
+      pointer-events: none;
+      position: absolute;
+      transform: translateX(-200%);
+    }
+  }
+  
+  .contentdiv {
+    width: 15%;
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+  }
+  
+  .contentdivMobile {
+    display: none; /* Hide by default */
+  }
+  @media (max-width: 768px) {
+    .contentdiv {
+      display: none; /* Hide on mobile */
+    }
+  
+    .contentdivMobile {
+      display: block; /* Show on mobile */
+      width: 100%;
+      padding: 20px;
+    }
+  }
+  .chatdiv {
+    width: -moz-available;
+    width: -webkit-fill-available;
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+  }
+  
+  .title {
+    color: black;
+    font-family:"Montserrat", sans-serif;;
+    margin-top: -15px;
+    margin-bottom: 10px;
+    font-size: 30px;
+    margin-left: 60px;
+  }
+  
+  .newChatButton {
+    background-color: #00496B;
+    color: white;
+    height: 32px;
+    width: 203px;
+    border: none;
+    border-radius: 5px;
+    text-align: left;
+    padding: 0 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-family: "Montserrat", sans-serif;;
+    font-size: 15px;
+    margin-left: 60px;
+  }
+  
+  .newChatButton:hover {
+    background-color: #003D5B;
+  }
+  
+  .newChatButton img {
+    margin-right: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .contentdiv {
+      display: none;
+    }
+  
+    .chatdiv {
+      padding: 20px;
+    }
+  
+    .title,
+    .newChatButton {
+      margin-left: 10px;
+      margin-bottom: 35px;
+      margin-top: -26px;
+    }
+  
+    .show {
+      opacity: 1 !important;
+      visibility: visible !important;
+      pointer-events: all !important;
+      transform: translateX(0) !important;
+    }
+  }

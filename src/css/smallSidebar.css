@@ -1,0 +1,145 @@
+
+
+.smsidebar {
+    width: 70px;
+    height: 100vh;
+    justify-content: space-between;
+    top: 0;
+    left:0;
+    background-color: #fff;
+    color: #000000;
+    padding: 10px;
+    gap:0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  .smallMenu{
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    z-index: 999;
+    position: absolute;
+    top:0px;
+    left:0px;
+    width: 100%;
+    padding:0px 20px;
+    background-color: #fff;
+    cursor: pointer;
+    
+  }
+
+  .smsidebar ul {
+    list-style-type: none;
+    padding: 0;
+    font-size: 11px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+
+  }
+  
+  .smsidebar li {
+    margin: 10px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #000000;
+
+  }
+  
+  .smsidebar a {
+    color: black;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: "Montserrat", sans-serif;
+  }
+  
+  .smsidebar a:hover {
+    text-decoration: none;
+  }
+  
+  .smsidebar .active .iconstyle {
+    background-color: #cacace;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    fill: rgba(204, 195, 195, 0.068);
+    padding:4px;
+    color: black;
+    /* margin-bottom: 5px; */
+  }
+
+  .iconstyle{
+    padding:4px;
+    margin-bottom: 5px;
+    height:30px;
+    width:30px;
+    border-radius: 8px;
+    transition: 350ms;
+  }
+
+.listModules li:hover .iconstyle{
+  background-color: #dedede;
+}
+  
+  
+  .smsidebar li span {
+    font-size: 11px;
+    font-weight: 400;
+    text-align: center;
+  }
+  
+  .smsidebar .active span {
+    color: #333;
+  }
+  
+  /* Sidebar.module.css */
+  
+  /* Existing styles */
+
+  
+  
+  .userIcon {
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 10px;
+    width:100%;
+  }
+  
+  .logoutSection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px; /* Space between text and icon */
+    margin-bottom: 20px;
+  }
+  
+  .logoutText {
+    cursor: pointer;
+    font-size: 16px;
+    color: #ff4d4d; /* Red color for logout text */
+  }
+  
+  .logoutText:hover {
+    text-decoration: underline; /* Add underline on hover */
+  }
+  
+  .logoutIcon {
+    cursor: pointer;
+  }
+
+  .menu{
+    display:flex;
+    
+  }
+  
+  @media(max-width:450px){
+    .smsidebar{
+        width:60px;
+    }
+  }

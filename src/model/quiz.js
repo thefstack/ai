@@ -1,0 +1,82 @@
+import mongoose from "mongoose";
+
+const quizSchema=new mongoose.Schema({
+    userId:{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"user",
+        required:true,
+    },
+    title:{
+        type:String,
+        required:true
+    },
+    category:{
+        type:String,
+        default:""
+    },
+    subCategory:{
+        type:[String],
+        default:[]
+    },
+    personalContent:{
+        type:Boolean,
+        default:false
+    },
+    assistantId:{
+        type:String
+    },
+    fileId:[{
+        type:mongoose.Schema.Types.ObjectId,
+        ref:"assistant"
+    }],
+    threadId:{
+        type:String
+    },
+    review:{
+        type:String,
+        default:""
+    },
+    contents:[
+        {
+            question:{
+                type:String,
+            },
+            options:[
+                {
+                    text:{
+                        type:String
+                    },
+                    label:{
+                        type:String
+                    }
+                }
+            ],
+            answer:{
+                type:String,
+            },
+        },
+    ],
+    selectedDifficulty:{type:String},
+    userAnswer:{
+        type:[String],
+        default:[]
+    },
+    tokenUsageInGeneratingQuestions:{
+        type:Object
+    },
+    tokenUsageInGeneratingReview:{
+        type:Object
+    },
+    score:{
+            type:Number,
+            default:0
+    },
+    isAttempted:{
+        type:Boolean,
+        default:false
+    }
+},{timestamps:true});
+
+const Quiz= mongoose.models.quiz||mongoose.model('quiz',quizSchema);
+
+module.exports=Quiz;

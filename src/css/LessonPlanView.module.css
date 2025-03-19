@@ -1,0 +1,161 @@
+/* Main container with 100% height and width */
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  overflow-y: scroll;
+  font-family:"Montserrat", sans-serif;;
+  background-color: #fafafa;
+  padding:20px 10px;
+}
+
+.LessonCompleteButton {
+  background-color: green;
+  color: white;
+  border: none;
+  padding:8px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+  font-family:"Montserrat", sans-serif;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.startQuizBtn{
+  margin: 3px 0;
+  border:none;
+  outline:none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap:10px;
+  padding:10px 30px;
+  background-color: #ffecc7c7;
+  color: #E4B141;
+  border-radius: 8px;
+  cursor: pointer;
+}
+.startQuizBtn:hover{
+  background-color: #fae3b4f5;
+  color:#eaa000;
+}
+
+.content{
+  padding:10px;
+}
+.dummyText {
+  font-size: 15px;
+  padding: 15px;
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+  line-height: 25px;  
+  /* min-height: calc(100vh - 100px); */
+}
+.dummyText h1{
+  line-height: 35px;  
+}
+.dummyText ul{
+  list-style-type:circle;
+  margin-left: 30px;
+}
+.dummyText pre {
+  white-space: pre-wrap;    /* Wrap long lines to avoid horizontal scroll */
+  word-wrap: break-word;    /* Break words if necessary to fit */
+  overflow: auto;           /* Allow vertical scroll if the content overflows */
+  max-width: 100%;          /* Ensure it doesn't exceed container width */
+  box-sizing: border-box;   /* Consider padding and borders in the element's width and height */
+}
+
+.dummyText code {
+  display: block;           /* Ensure that the code block takes full width within pre */
+  overflow-wrap: anywhere;  /* Allow breaking of words at any point */
+  max-width: 100%;          /* Ensure it doesn't exceed container width */
+  box-sizing: border-box;   /* Consider padding and borders in the element's width and height */
+}
+
+.dummyText ol{
+  padding-left: 25px;
+
+}
+.dummyText img{
+  max-width: 500px;
+}
+
+
+/* Navigation bar with Previous and Next buttons */
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 20px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbutton {
+  background: none;
+  border: none;
+  font-size:16px;
+  color: black;
+  cursor: pointer;
+  font-family:"Montserrat", sans-serif;;
+  font-weight: 500;
+
+}
+
+.header {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.subHeader {
+  font-size: 1.6em;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+.paragraph {
+  font-size: 1.1em;
+  margin-bottom: 1em;
+}
+
+.blockquote {
+  margin: 1em 0;
+  padding: 10px;
+  background-color: #f0f8ff;
+  border-left: 4px solid #1a73e8;
+  font-style: italic;
+}
+
+.code {
+  background-color: #f4f4f4;
+  padding: 10px;
+  border-radius: 5px;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  overflow-x: auto;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inlineCode {
+  background-color: #f4f4f4;
+  padding: 2px 4px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  display: inline;
+}
+
+.pre {
+  background-color: #f4f4f4;
+  padding: 15px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  overflow-x: auto;
+}

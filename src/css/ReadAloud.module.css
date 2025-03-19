@@ -1,0 +1,21 @@
+/* Styling for the Read Aloud button */
+.readAloudButton {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition for scaling and color */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+  /* Hover effect */
+  .readAloudButton:hover {
+    transform: scale(1.1); /* Scale up the button on hover */
+  }
+  
+  /* Active state: change color when reading */
+  .active {
+    color: blue; /* Change this to green if you prefer */
+  }
+  

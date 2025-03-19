@@ -1,0 +1,307 @@
+/* Skillup.module.css */
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+    overflow-y: auto;
+    /* Enables vertical scrolling */
+    max-height: 100vh;
+    /* Limits height to viewport height */
+    scrollbar-width: none;
+
+}
+
+.container::-webkit-scrollbar {
+    display: none;
+    /* Hides scrollbar for Webkit browsers */
+}
+
+.noResults {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    ;
+}
+
+.title {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.subtitle {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #666;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+
+}
+
+.searchContainer {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    gap: 10px;
+}
+
+.searchInput {
+    width: 100%;
+    max-width: 700px;
+    padding: 14px;
+    font-size: 0.9rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.searchButton {
+    padding: 14px 15px;
+    font-size: 0.9rem;
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.searchButton:hover {
+    background-color: #0056b3;
+}
+
+.categories {
+    display: grid;
+    gap: 15px;
+}
+
+.category {
+    margin-bottom: 20px;
+    scroll-margin-top: 100px;
+    /* Ensures proper spacing when scrolling to a section */
+
+}
+
+.categoryTitle {
+    font-size: 1rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.bots {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* Two cards per row */
+    gap: 15px;
+    align-items: stretch;
+    /* Ensures all cards stretch evenly */
+}
+
+.botCard {
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 8px;
+    padding: 10px;
+    box-shadow: 0 0px 0px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, box-shadow 0.3s;
+    cursor: pointer;
+    height: 100%;
+    /* Ensures all cards have the same height */
+}
+
+.botCard:hover {
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.botImageContainer {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+.botImage {
+    border-radius: 50%;
+}
+
+.botDetails {
+    flex: 1;
+}
+
+.botName {
+    font-size: 0.8rem;
+    font-weight: 600;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.botDescription {
+    font-size: 0.7rem;
+    color: #181717;
+    margin-bottom: 5px;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.botAuthor {
+    font-size: 0.7rem;
+    color: #777;
+}
+
+@media (max-width: 768px) {
+    .searchInput {
+        width: 100%;
+    }
+
+    .categories {
+        overflow-y: auto;
+    }
+
+    @media (min-width: 768px) {
+        .bots {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            /* Adjusts for odd cards */
+            gap: 20px;
+            /* Adds spacing between cards */
+        }
+    }
+
+    .botCard {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+.navContainer {
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 40px;
+    gap: 10px;
+}
+
+.navButton {
+    /* background-color: #f0f0f0; */
+    border: none;
+    border-radius: 5px;
+    padding: 3px 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navButton:hover {
+    /* background-color: #c0c0c0; */
+    text-decoration: underline;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modalContent {
+    background: #fff;
+    padding: 40px; /* Increased padding for better spacing */
+    border-radius: 10px;
+    max-width: 700px; /* Increased width */
+    width: 90%;
+    max-height: 80vh; /* Set maximum height for large content */
+    overflow-y: auto; /* Add scroll for overflowing content */
+    text-align: center;
+    position: relative;
+    font-family: 'Montserrat', sans-serif; /* Montserrat font family */
+}
+
+.closeButton {
+    position: absolute;
+    top: 20px; /* Adjusted for better spacing */
+    right: 20px;
+    font-size: 1.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.modalImage {
+    border-radius: 50%;
+    margin-bottom: 20px;
+    width: 120px; /* Increased image size */
+    height: 120px;
+}
+
+.modalContent h2 {
+    font-size: 1.4rem; /* Smaller font size */
+    margin-bottom: 15px;
+    color: #333;
+    font-family: 'Montserrat', sans-serif;
+    margin-top: -15px;
+}
+
+.modalContent p {
+    font-size: 0.9rem; /* Smaller font size */
+    color: #333333;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+}
+
+.modalButtons {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px; /* Increased gap for spacing */
+    justify-content: center;
+}
+
+.modalButton {
+    padding: 12px 30px; /* Adjusted padding for larger buttons */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem; /* Smaller font size */
+    font-family: 'Montserrat', sans-serif;
+}
+
+.modalButton:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    .modalContent {
+        padding: 20px; /* Adjust padding for smaller screens */
+        max-width: 90%;
+    }
+
+    .modalImage {
+        width: 100px; /* Adjusted image size */
+        height: 100px;
+    }
+
+    .modalButton {
+        padding: 10px 20px; /* Adjust button size */
+        font-size: 0.9rem;
+    }
+}

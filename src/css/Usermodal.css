@@ -1,0 +1,45 @@
+.userModalMenu {
+    width: 200px;
+    display:flex;
+    flex-direction: column;
+    padding: 8px;
+    background: rgb(240 240 240);
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0);
+    z-index: 999;
+  }
+  
+.userMenu-item {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 12px;
+    padding: 8px 12px;
+    color: #333;
+    text-decoration: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .userMenu-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  .userMenu-item svg {
+    width: 16px;
+    height: 16px;
+    color: #666;
+  }
+  
+  .userMenu-item span {
+    font-size: 14px;
+  }
+  
+  .divider {
+    height: 1px;
+    background-color: #eee;
+    margin: 8px 0;
+  }
+  
+  

@@ -1,0 +1,135 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modalContent {
+  background: #0B4681;
+  padding: 20px;
+  border-radius: 10px;
+  width: 500px;
+  max-width: 90%;
+  min-height: 400px;
+  max-height: 80%;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.chooseText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 12px;
+  margin-top: 5px;
+  color: white;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: white;
+}
+
+.body {
+  flex-grow: 1;
+  overflow-y: auto;
+  margin-top: 15px;
+  padding-right: 10px; /* Adds space for scrollbar */
+}
+
+.body::-webkit-scrollbar {
+  width: 6px;
+}
+
+.body::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 3px;
+}
+
+.body::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.categoryList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  color: white;
+}
+
+.categoryItem {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.categoryItem:hover {
+  background: #f0f0f0;
+  color: black;
+}
+
+.selected {
+  background-color: #e0e0e0;
+  border-color: #1F8CEB;
+  color: black;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.selectAllButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  width: 30%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.selectAllButton:hover {
+  background-color: #0056b3;
+}
+
+.nextButton {
+  background-color: #CF7001;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px;
+  cursor: pointer;
+  width: 70%;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: 20PX;
+}
+
+.nextButton:hover {
+  background-color: #CF7001;
+}

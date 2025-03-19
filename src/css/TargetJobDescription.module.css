@@ -1,0 +1,123 @@
+/* Container */
+.container {
+    max-width: 600px;
+    margin: 130px auto;
+    text-align: left;
+    padding: 20px;
+    font-family: 'Montserrat', sans-serif;
+
+  }
+  
+  /* Heading & Description */
+  .heading {
+    font-size: 22px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 8px;
+  }
+  
+  .description {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 24px;
+    line-height: 1.5;
+  }
+  
+  /* Input Section */
+  .inputLabel {
+    font-size: 16px;
+    font-weight: 600;
+    color: #000;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .inputField {
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    border: 2px solid #007bff;
+    border-radius: 6px;
+    background-color: #f5faff;
+    outline: none;
+    margin-top: 5px;
+  }
+  
+  /* Button Container */
+  .buttonContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 80px;
+  }
+  
+  /* Previous Button */
+  .previousBtn {
+    font-size: 16px;
+    font-weight: bold;
+    color: #888;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .previousBtn:hover {
+    color: #555;
+  }
+  
+  /* Icon Styling */
+  .icon {
+    stroke-width: 2;
+  }
+  
+  /* Continue Button */
+  .continueBtn {
+    padding: 10px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: #007bff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .continueBtn:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      width: 90%;
+      margin: 50px auto;
+      padding: 15px;
+    }
+  
+    .heading {
+      font-size: 20px;
+    }
+  
+    .description {
+      font-size: 14px;
+      margin-bottom: 20px;
+    }
+  
+    .inputField {
+      font-size: 14px;
+      padding: 12px;
+    }
+  
+    .continueBtn {
+      font-size: 14px;
+    }
+  
+    .previousBtn {
+      font-size: 14px;
+    }
+  }
+  

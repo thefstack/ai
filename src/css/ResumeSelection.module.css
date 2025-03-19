@@ -1,0 +1,120 @@
+/* Page Container - Full Width, Left Aligned */
+.container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 80%;
+    padding: 40px;
+    margin-top: 130px;
+    font-family: 'Montserrat', sans-serif;
+    /* background-color: #007bff; */
+    margin-left: 70px;
+
+  }
+  .filetext{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 21px;
+    font-weight: 600;
+  }
+  
+  /* Left Section: Guidance Text */
+  .textSection {
+    width: 40%;
+    text-align: left;
+    padding-right: 30px;
+  }
+  
+  .heading {
+    font-size: 28px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 10px;
+  }
+  
+  .description {
+    font-size: 18px;
+    color: #131212;
+    margin-bottom: 5px;
+    line-height: 1.5;
+    font-weight: 500;
+  }
+  
+  /* Right Section: Selection Cards */
+  .selectionBox {
+    width: 45%;
+    background-color: #e7f0f9;
+    border-radius: 6px;
+    padding: 15px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.1);
+    transition: background 0.3s ease;
+
+  }
+  
+  /* Option Cards */
+  .option {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px;
+    border-radius: 6px;
+    cursor: pointer;
+    background-color: #fff;
+    transition: background 0.3s ease;
+    margin-bottom: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+
+  }
+  
+  .option:hover {
+    background-color: #d3e7f9;
+  }
+  
+  /* Selected Card */
+  /* .selected {
+    background-color: #dbeafe;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  } */
+  
+  /* Icons */
+  .icon {
+    color: #007bff;
+  }
+  
+  .uploadIcon {
+    color: #007bff;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1024px) {
+    .textSection {
+      width: 50%;
+    }
+  
+    .selectionBox {
+      width: 40%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+    }
+  
+    .textSection {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  
+    .selectionBox {
+      width: 100%;
+    }
+  
+    .option {
+      font-size: 14px;
+      padding: 12px;
+    }
+  }
+  

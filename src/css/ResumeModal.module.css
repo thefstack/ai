@@ -1,0 +1,124 @@
+/* Resume Container */
+.resumeContainer {
+  max-width: 600px;
+  margin: 80px auto;
+  text-align: center;
+  padding: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* Headings */
+.subHeading {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000;
+  margin-bottom: 10px;
+}
+
+.mainHeading {
+  font-size: 38px;
+  font-weight: 700;
+  color: #000;
+  margin-bottom: 16px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.description {
+  font-size: 16px;
+  color: black;
+  margin-bottom: 40px;
+  line-height: 1.6;
+  text-align: left;
+
+}
+
+/* Input Section */
+.inputSection {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.inputLabel {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000;
+}
+
+.inputDescription {
+  font-size: 16px;
+  color: #000000;
+  margin-top: 6px;
+  line-height: 1.5;
+}
+
+.inputSubLabel {
+  font-size: 16px;
+  font-weight: 600;
+  display: block;
+  margin-top: 15px;
+  color: #000;
+}
+
+.inputField {
+  width: 100%;
+  padding: 14px;
+  font-size: 16px;
+  border: 2px solid #0056b3;
+  /* Blue Border */
+  border-radius: 6px;
+  background-color: #f5faff;
+  outline: none;
+  margin-top: 10px;
+}
+
+/* Button */
+.continueBtn {
+  margin-top: 70px;
+  padding: 12px 28px;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.continueBtn:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resumeContainer {
+    width: 90%;
+    margin: 50px auto;
+    padding: 15px;
+  }
+
+  /* .mainHeading {
+    font-size: 32px;
+  } */
+
+  /* .description {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: black;
+  } */
+
+  .inputLabel {
+    font-size: 18px;
+  }
+
+  .inputField {
+    font-size: 16px;
+    padding: 12px;
+  }
+
+  .continueBtn {
+    width: 100%;
+    font-size: 16px;
+  }
+}

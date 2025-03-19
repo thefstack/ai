@@ -1,0 +1,53 @@
+.privacy-policy-container {
+    padding: 0 10%;          /* 10% padding on both sides */
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;         /* Increased line height for readability */
+    height: 100%;
+    overflow-y: scroll;
+  }
+  
+  .heading {
+    color: #0b5394;           /* Heading color */
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  .mainheading{
+    color:black;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 45px;
+  }
+  
+  .privacy-policy-container p,
+  .privacy-policy-container ul {
+    margin-bottom: 15px;
+  }
+  
+  .privacy-policy-container ul {
+    padding-left: 20px;
+  }
+  .back-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    font-size: 16px;
+    color: white; /* Text color */
+    background-color: black; /* Button background */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 10px 15px; /* Padding for a button-like appearance */
+    margin-top: 20px; /* Margin at the top */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.back-button:hover {
+    background-color: #444; /* Darker shade on hover */
+}
+
+.back-icon {
+    margin-right: 5px; /* Space between icon and text */
+    width: 20px; /* Adjust size as necessary */
+    height: 20px; /* Adjust size as necessary */
+}

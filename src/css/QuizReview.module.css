@@ -1,0 +1,280 @@
+.quizReviewContainer {
+  width: 100%;
+  padding: 25px 30px;
+  font-family: 'Montserrat', sans-serif; 
+  background-color: #ffffff;
+  max-height:100vh;
+  overflow-x:hidden;
+  overflow-y: scroll;
+  scrollbar-width: none;
+}
+
+
+
+.generateLessonPlanBtn{
+  outline: none;
+  border: none;
+  background-color: #0a489e;
+  color: #fff;
+  padding:5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: 0.2s;
+  margin-top: 15px;
+  width: max-content;
+  height:30px
+}
+.generateLessonPlanBtn:hover{
+  background-color:#127412;
+}
+
+.wrongIconLabel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background: red;
+  color: white;
+  padding: 2px;
+  margin: 0;
+  stroke-width: 3.5; /* Ensure crispness */
+  shape-rendering: crispEdges; /* Improves clarity */
+  box-shadow: none; /* Remove potential blurring effects from box-shadow */
+}
+
+.correctIconLabel{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  background:  rgb(31 203 31);
+  color: white;
+  padding: 2px;
+  margin: 0;
+  stroke-width: 3.5; /* Ensure crispness */
+  shape-rendering: crispEdges; /* Improves clarity */
+  box-shadow: none; /* Remove potential blurring effects from box-shadow */
+}
+
+
+.motiveText{
+  font-size: 14px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif; 
+  text-align: center;
+  margin-top: 10px;
+}
+
+.title {
+  font-size: 24px;
+  margin-bottom: 10px;
+  margin-top: -10px;
+}
+
+.description {
+  font-size: 16px;
+  margin-bottom: 20px;
+  font-weight: 500;
+  color: #00496b;
+}
+
+.progressSection {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 10px 10px 0px;
+  box-sizing: border-box;
+}
+
+
+.dummyText {
+  font-size: 15px;
+  display:flex;
+  flex-direction: column;
+  gap:15px;
+  line-height: 25px;  
+}
+.dummyText ul{
+  list-style-type:circle;
+  margin-left: 30px;
+}
+
+.progressWrapper {
+  display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: auto;
+      height: auto;
+      max-width: 200px;
+}
+
+.shareButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  /* margin-top: 10px; */
+  font-family: 'Montserrat', sans-serif; 
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2px;
+
+}
+
+.topicSection {
+  margin-bottom: 20px;
+  margin-top: 20px;
+  display:flex;
+  flex-direction: column;
+  gap:5px;
+}
+
+.topicSection p{
+  margin-top: 2px;
+}
+
+.questionsSection {
+  margin-top: 20px;
+}
+
+.questionContainer {
+  margin-bottom: 10px;
+  padding: 10px;
+  font-family: 'Montserrat', sans-serif; 
+
+}
+
+.questionSummary {
+  font-weight: bold;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif; 
+
+}
+
+.answersContainer {
+  margin-top: 10px;
+  margin-left: 11px;
+}
+.iconLabel {
+  margin-right: 10px; /* Adjust as needed */
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 5px;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.optionLabel {
+  margin-right: 10px;
+}
+
+.correct {
+  background-color: #d4edda;
+  color: #155724;
+}
+
+.incorrect {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.selectedAnswer {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.explanationContainer {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+.rankButton {
+  background-color: black; /* Green color */
+  color: white;
+  border: none;
+  padding: 8px 8px;
+  font-size: 14px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.rankButton:hover {
+  background-color: #076ad8; /* Darker green on hover */
+  color:white;
+}
+
+.rankText {
+  color: green; /* Dark gray color */
+  /* margin-top: 15px; */
+  font-family: 'Montserrat', sans-serif; 
+  font-size: 12px;
+  font-weight: bold;
+  text-align: center;
+  margin-left:5px;  
+  display:flex;
+
+}
+
+@media(max-width:972px){
+  .progressSection{
+    flex-direction: column-reverse;
+    gap: 30px;
+    
+  }
+  .progressWrapper{
+    align-items: center;
+    height: 160px;
+    margin: 0 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    max-width: none;
+  }
+}
+
+@media(max-width:734px){
+  .quizReviewContainer{
+    padding:80px 30px; 
+  }
+  
+  .dummyText{
+    margin-top:50px;
+  }
+}
+
+.rankSection {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.knowYourRankButton {
+  padding: 10px 20px;
+  background-color: #076ad8;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.circularProgress {
+  margin-top: 20px;
+}

@@ -1,0 +1,809 @@
+/* Main Container */
+.container {
+  display: flex;
+  width: 80%;
+  max-width: 1400px;
+  height: 100vh;
+  /* margin: auto; */
+  background: #f4f7fc;
+  padding: 20px;
+  justify-content: flex-start;
+  margin-left:100px;
+  font-family: 'Montserrat', sans-serif;
+
+  
+}
+
+/* Sidebar */
+.sidebar {
+  width: 350px;
+  background: #eff3f9;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.sidebarHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.backIcon, .plusIcon {
+  cursor: pointer;
+}
+
+.section {
+  margin-bottom: 10px;
+  padding: 12px;
+  background: white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.section:hover, .section.active {
+  background: #e0e9f8;
+}
+
+.sectionHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.sectionTitle {
+  flex: 1;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+/* Main Content */
+.mainContent {
+  flex: 1;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Guidance Cards */
+.guidanceContainer {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+}
+
+.card {
+  flex: 1;
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 60%;
+  
+}
+
+.guidanceButton, .reportButton {
+  margin-top: 12px;
+  color: #60add1;
+  border: 0.2px solid #c4c2c2;
+  padding: 10px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-weight: 600;
+  font-size: 16px;
+  background-color: white;
+}
+
+/* .guidanceButton:hover, .reportButton:hover {
+  background: #0056b3;
+} */
+
+/* Progress Circle */
+.progressCircle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 15px 0;
+}
+
+.progressCircle svg {
+  stroke: black;
+}
+
+.progressCircle text {
+  font-weight: bold;
+  fill: black;
+}
+
+/* Form Section */
+.formContainer {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  min-height: 200px;
+  overflow-y: scroll;
+}
+
+.formHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.viewButton {
+  background: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-weight: 500;
+}
+
+.viewButton:hover {
+  background: #0056b3;
+}
+
+/* Form */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.inputField {
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  flex: 1;
+  font-size: 16px;
+  height: 48px;
+}
+
+
+/* Input with Icon */
+.inputWithIcon {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.inputIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+/* Add Experience Button */
+.addButton {
+  background-color: #007cb6;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  font-size: 14px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.addButton:hover {
+  background-color: #0056b3;
+}
+
+.addButton svg {
+  margin-right: 8px;
+}
+
+/* View Guidance Button */
+.viewGuidanceButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.viewGuidanceButton:hover {
+  background-color: #218838;
+}
+
+.viewGuidanceButton svg {
+  margin-right: 8px;
+}
+
+/* Input Field Styling */
+.inputField {
+  width: 100%;
+  padding: 10px;
+  padding-right: 40px; /* Space for icon */
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Textarea Styling */
+textarea.inputField {
+  resize: vertical;
+  min-height: 100px;
+}
+
+
+.workRow {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.workInputContainer {
+  position: relative;
+  width: 100%;
+}
+
+.workInput {
+  width: 100%;
+  padding: 20px 35px 10px 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+.workIcon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #666;
+}
+
+.workDeleteIcon {
+  cursor: pointer;
+  color: #d9534f;
+  transition: 0.2s ease-in-out;
+}
+
+.workDeleteIcon:hover {
+  color: #c9302c;
+}
+
+.workButtonContainer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+.workAddButton,
+.workGuidanceButton,
+.workExpandButton {
+  padding: 8px 15px;
+  font-size: 14px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.2s ease-in-out;
+}
+
+.workAddButton {
+  background-color: #28a745;
+  color: white;
+}
+
+.workAddButton:hover {
+  background-color: #218838;
+}
+
+.workGuidanceButton {
+  background-color: #007bff;
+  color: white;
+}
+
+.workGuidanceButton:hover {
+  background-color: #0056b3;
+}
+
+.workExpandButton {
+  background-color: #6c757d;
+  color: white;
+}
+
+.workExpandButton:hover {
+  background-color: #5a6268;
+}
+.workContainer {
+  background: white;
+  padding: 16px;
+  border-radius: 10px;
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  margin-top: -20px;
+}
+
+.workHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.exwork{
+  font-family: 'Montserrat', sans-serif;
+
+}
+.editIcon {
+  margin-left: 8px;
+  cursor: pointer;
+}
+
+.guidanceButton {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border: 1px solid black;
+  background: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.divider {
+  border: 0.5px solid #afabab;
+  margin: 20px 0;
+}
+
+.experienceBox {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: white;
+  padding: 15px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  margin-top: 30px;
+}
+
+.experienceText {
+  font-size: 14px;
+}
+
+.experienceIcons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  cursor: pointer;
+  color: black;
+}
+
+.addExperienceButton {
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  gap: 6px;
+  background: #007cb6;
+  color: white;
+  padding: 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  border: none;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+}
+
+
+
+
+
+
+.divider {
+  border: none;
+  border-top: 1px solid #ddd;
+  margin: 10px 0;
+}
+
+.skillBox {
+  margin: 10px 0;
+}
+
+.skillTitle {
+  font-size: 14px;
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 5px;
+  background: white;
+}
+
+.skillInput {
+  border: none;
+  outline: none;
+  flex-grow: 1;
+}
+
+.icons {
+  display: flex;
+  gap: 8px;
+}
+
+.icon {
+  cursor: pointer;
+}
+
+
+
+
+.projectContainer {
+  background: #f8f9fc;
+  padding: 20px;
+  border-radius: 8px;
+  /* width: 100%; */
+  /* max-width: 450px; */
+  margin: auto;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.guidanceButton {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 10px 12px;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.projectCard {
+  background: white;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.projectHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.projectTitle {
+  font-weight: bold;
+}
+
+.projectIcons {
+  display: flex;
+  gap: 10px;
+}
+
+.form {
+  margin-top: 16px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 12px;
+  font-weight: 600;
+}
+
+.label {
+  font-weight: 400;
+}
+
+.inputField {
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.flexRow {
+  display: flex;
+  gap: 12px;
+}
+
+.checkboxContainer {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 12px;
+}
+
+.aiWritingSection {
+  margin-top: 16px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 12px;
+}
+
+.aiHeader {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 6px;
+  height: 250px;
+}
+
+.boldUnderline {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.aiButton {
+  background: #007cb6;
+  color: white;
+  border: none;
+  padding: 6px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 30px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.textArea {
+  width: 100%;
+  height: 100px;
+  border: none;
+  resize: none;
+  padding: 8px;
+}
+
+.footerButtons {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 12px;
+}
+
+.cancelButton {
+  background: white;
+  border: 1px solid #ccc;
+  padding: 6px 12px;
+  margin-right: 8px;
+  border-radius: 6px;
+}
+
+.saveButton {
+  background: #007cb6;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: none;
+}
+
+.certificationCard{
+  margin-top: 30px;
+}
+
+/* Background Blur Overlay */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(5px);
+  z-index: 999;
+}
+
+/* Popup Modal */
+.skillPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.4);
+  width: 600px; /* Exact width from screenshot */
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0px 6px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+}
+
+/* Popup Header */
+.popupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Close Icon */
+.closeIcon {
+  cursor: pointer;
+  color: #666;
+  transition: all 0.2s;
+}
+
+.closeIcon:hover {
+  color: #000;
+}
+/* Stronger Background Blur */
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5); /* Darker for better visibility */
+  backdrop-filter: blur(12px); /* Stronger blur */
+  z-index: 999;
+}
+
+/* Bigger Popup with Better Alignment */
+.skillPopup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  width: 700px;  /* Matching your screenshot */
+  padding: 35px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+/* Popup Header */
+.popupHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Close Icon */
+.closeIcon {
+  cursor: pointer;
+  color: #333;
+  transition: all 0.2s;
+}
+
+.closeIcon:hover {
+  color: #000;
+}
+
+/* Input Field - Perfect Spacing */
+.popupInput {
+  width: 100%;
+  padding: 14px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* Suggested Skills Section */
+.suggestionsBox {
+  background: #e8f0ff;
+  padding: 18px;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+/* Suggested Skills Title */
+.suggestionsBox p {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* Skills Button Container */
+.suggestionsList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+/* Skill Button */
+.skillButton {
+  padding: 10px 18px;
+  border: 1px solid #ccc;
+  border-radius: 20px;
+  background: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.2s;
+}
+
+/* Selected Skill - Exact Blue Color */
+.selectedSkill {
+  background: #007bff;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+
+
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .sidebar {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .guidanceContainer {
+    flex-direction: column;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+
+  .formContainer {
+    padding: 15px;
+  }
+
+  .row {
+    flex-direction: column;
+  }
+  .inputWithIcon {
+    position: relative;
+    width: 100%;
+  }
+  
+  .inputIcon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+  }
+}

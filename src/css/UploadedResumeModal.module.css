@@ -1,0 +1,161 @@
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.modalContent {
+    background: #fff;
+    width: 450px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.modalHeader {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 600;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.closeButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.modalBody {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.label {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.uploadContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.uploadButton {
+    background: #3b82f6;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.fileDisplay {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e8f0fe;
+    border: 1px solid #3b82f6;
+    color: #3986f1;
+    padding: 8px 10px;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 13px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.fileName {
+    flex: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.fileSize {
+    font-size: 12px;
+    color: #555;
+    margin-left: 10px;
+}
+
+.removeFileButton {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #3986f1;
+}
+
+.inputField, .selectField, .textArea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.textArea {
+    height: 80px;
+    resize: none;
+}
+
+.modalFooter {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #ddd;
+}
+
+.discardButton {
+    background: #f3f4f6;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-family: 'Montserrat', sans-serif;;
+
+}
+
+.saveButton {
+    background: #3b82f0;
+    color: white;
+    border: none;
+    padding: 10px 14px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;;
+
+}

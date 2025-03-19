@@ -1,0 +1,277 @@
+/* Container for the whole login page */
+/* Container for the whole login page, centered vertically and horizontally */
+body,
+html {
+  height: 100%;
+  margin: 0;
+}
+
+.signin-container {
+  width: 100%;
+  max-width: 460px;
+  padding: 40px 20px;
+  background-color: #ffffff;
+  /* border-radius: 10px; */
+  /* box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); */
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  /* margin-bottom: 20px; */
+  justify-content: center;
+}
+
+/* Flexbox parent container for centering */
+.flex-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  /* Full viewport height */
+  background-color: #f2f2f2;
+  flex-direction:column ;
+  /* Optional background color for contrast */
+  padding: 15px;
+}
+
+
+/* Logo and heading */
+.signin-logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 5px;
+}
+
+.logo {
+  width: 80px;
+  height: 80px;
+  /* margin-right: 10px; */
+  margin-top: -20px;
+}
+
+.logo-text {
+  font-size: 19px;
+  color: #374151;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -5px;
+  font-weight: bold;
+  margin-top: -23px;
+
+}
+
+.heading {
+  font-size: 22px;
+  margin-bottom: 5px;
+  color: #374151;
+  background-color: white;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  word-spacing: -2px;
+  /* Decreases space between words */
+
+
+}
+
+/* Social login buttons */
+.social-login-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: -5px;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.social-button {
+  display: flex;
+  /* Use flexbox to align items */
+  align-items: center;
+  /* Vertically center icon and text */
+  justify-content: center;
+  /* Horizontally center the content */
+  width: 45%;
+  padding: 8px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+  margin: 0 8px;
+  border: none;
+  margin-top: 8px;
+}
+
+.google {
+  background-color: #0b5394;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.facebook {
+  background-color: #1a98cbff;
+  font-size: 13px;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.social-button img {
+  margin-right: 10px;
+  /* Adds space between icon and text */
+}
+
+.or-text {
+  margin: 20px 0;
+  color: #374151;
+  font-size: 13px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  margin-top: 25px;
+}
+
+/* Input Fields */
+.signin-form {
+  margin-top: 30px;
+  color: black;
+
+}
+.labelstyle{
+  font-size: 13px;
+  display: flex;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  margin-left: 10px;
+
+}
+
+.input-group {
+  margin-bottom: 10px;
+  
+  color: black;
+}
+
+.input-field {
+  width: 95%;
+  padding: 12px;
+  font-size: 14px;
+  border-radius: 5px;
+  border: 1px solid #ffffff;
+  background-color: #f2f3f5;
+  color:black;
+  margin-top: 5px;
+  /* font-weight: bold; */
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.forgot-password-link {
+  font-size: 12px;
+  color: #1a98cbff;
+  /* position: absolute; */
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  text-decoration: none;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-top:10px;
+
+}
+.textstyle{
+  color:#808080;
+  font-size: 11px;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.submit-button {
+  width: 97%;
+  padding: 9px;
+  border-radius: 10px;
+  background-color: #0b5394;
+  color: #fff;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  margin-top: 20px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+
+}
+
+.submit-button:disabled {
+  background-color: #00388088;
+  cursor: not-allowed;
+}
+
+.spinner {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #003880;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  animation: spin 1s linear infinite;
+  margin: 0 auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.signup-text {
+  color: black; /* Sets the main text color to black */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.signup-texts {
+  color: black; /* Sets the main text color to black */
+  font-family: 'Montserrat', sans-serif;
+  font-size: 13px;
+  font-weight: 600;
+  margin-top: 30px;
+}
+
+.terms-link, .privacy-link {
+  color: #1a98cb; /* Skyblue color for links */
+  text-decoration: none; /* Remove underline */
+}
+
+.terms-link:hover, .privacy-link:hover {
+  text-decoration: underline; /* Add underline on hover for better UX */
+}
+
+.signup-link {
+  color: #003880;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .signin-container {
+    padding: 20px;
+  }
+
+  .social-button {
+    width: 48%;
+  }
+
+  .logo-text {
+    font-size: 1.2em;
+  }
+  .footer {
+    text-align: center;
+    padding: 10px 0;
+    /* color: #dadada; */
+    font-size: 10px;
+    bottom: 0;
+    width: 100%;
+  }
+}

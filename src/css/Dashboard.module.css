@@ -1,0 +1,384 @@
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  margin: 30px 0;
+  align-items: center;
+  gap: 15px;
+  padding: 30px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.info p {
+
+  gap: 10px;
+  align-items: flex-start;
+
+}
+
+.info h4 {
+  min-width: 70px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+@media(max-width:734px) {
+  .container {
+    margin-top: 100px;
+  }
+}
+
+
+@media(max-width:500px) {
+  .container h1 {
+    font-size: 1.5rem;
+  }
+
+  .container h3 {
+    font-size: 1.1rem;
+  }
+}
+
+
+
+
+.skillcontainer {
+  padding: 20px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.categories {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.category {
+  margin-bottom: 20px;
+}
+
+.categoryTitle {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.bots {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.botCard {
+  background: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  padding: 15px;
+  max-width: 300px;
+  flex: 1 1 calc(33.333% - 20px);
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.botImageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  border-radius: 8px;
+  height: 100px;
+  margin-bottom: 10px;
+}
+
+.botImage {
+  width: auto;
+  height: 100%;
+}
+
+.botName {
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.botDescription {
+  font-size: 14px;
+  color: #555;
+  margin: 10px 0;
+}
+
+.botAuthor {
+  font-size: 12px;
+  color: #999;
+}
+
+/* Floating Icon */
+.floatingIcon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #ffffff;
+  border-radius: 50px;
+  padding: 10px 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+/* Animation for Desktop */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.floatingIcon:hover {
+  transform: scale(1.1);
+  background-color: #f5f5f5;
+}
+
+.reportText {
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+  display: flex;
+  justify-content: center;
+}
+
+.reporttxt {
+  font-size: 20px;
+  font-weight: 500;
+  color: #000000;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+/* Dialog Container */
+.dialogContainer {
+  position: fixed;
+  bottom: 0;
+  transform: translate(-50%, 100%);
+  width: 100%;
+  background-color: white;
+  box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 16px 16px 0 0;
+  padding: 20px;
+  z-index: 2000;
+  animation: slideUp 0.4s forwards ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
+}
+
+/* Centering for Desktop View */
+@media (min-width: 768px) {
+  .dialogContainer {
+    width: 50%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    bottom: auto;
+    border-radius: 16px;
+    animation: fadeIn 0.4s forwards ease-in-out;
+  }
+}
+
+/* Form Fields */
+.dialogForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+}
+
+.dialogForm label {
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  width: 160px;
+  text-align: left;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+.dialogForm input,
+.dialogForm textarea,
+.dialogForm select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: -5px;
+}
+
+.dialogForm textarea {
+  height: 80px;
+  resize: vertical;
+}
+
+.dialogForm button {
+  background-color: #007bff;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.dialogForm button:hover {
+  background-color: #004869;
+}
+
+/* Row Layout for Category and File Upload */
+.dialogForm .row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.dialogForm .row input,
+.dialogForm .row select {
+  flex: 1;
+}
+
+/* Close Button */
+.closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: transparent;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+/* Mobile-Specific Adjustments */
+@media (max-width: 768px) {
+  .dialogContainer {
+    padding: 16px;
+    border-radius: 12px 12px 0 0;
+  }
+
+  .floatingIcon {
+    bottom: 15px;
+    right: 15px;
+  }
+
+  .dialogForm label {
+    width: 100%;
+    margin-bottom: 4px;
+    /* font-size: 12px; */
+  }
+
+  .dialogForm input,
+  .dialogForm textarea,
+  .dialogForm select {
+    width: 100%;
+  }
+
+  .dialogForm .row {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.dialogForm label {
+  display: flex;
+  align-items: center; /* Aligns both the icon and text vertically */
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 8px; /* Space between label and input */
+}
+
+.dialogForm label svg {
+  margin-right: 8px; /* Space between the icon and text */
+}
+/* .submitStatusMessage {
+  margin-top: 20px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+.submitStatusMessage p {
+  font-size: 16px;
+  font-weight: bold;
+  color: #333;
+  font-family: 'Montserrat', sans-serif;
+
+} */
+/* 
+.submitStatusMessage.success {
+  background-color: #d4edda;
+  color: #155724;
+} */
+
+.submitStatusMessage.error {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+.gtext{
+  background-color: #ffffff;
+  color: #008d21;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 5px;
+  padding: 10px;
+
+
+}
+.errorMessage {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+  font-family: 'Montserrat', sans-serif;
+font-weight: bold;
+}
